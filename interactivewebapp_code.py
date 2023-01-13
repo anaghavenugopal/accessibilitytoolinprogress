@@ -6,8 +6,12 @@ st.sidebar.multiselect('Travel Time',['5 minutes','10 minutes','15 minutes','30 
 st.sidebar.multiselect('Modes',['Walking','Cycling','Public Transit'])
 st.sidebar.multiselect('Points of Interest',['Restaurant','Bank','Pharmacy','Supermarket','Cafe','University'])
 st.caption("Select the coordinates in map by clicking the arrow icon")
-st.button("Run and View Analysis")
-st.button("Download Report")
+col_A, col_B=st.columns(2)
+with col_A:
+    st.button("Run and View Analysis")
+with col_B:
+    st.button("Download Report")
+    
 col1, col2, col3 = st.columns(3)
 with col1:
     st.write(' ')
