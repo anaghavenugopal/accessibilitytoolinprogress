@@ -1,4 +1,4 @@
 import streamlit as st
-st.title("Interactive WebApp")
+st.title("Accessibility Analysis Tool")
 st.map()
 df_uploaded = st.sidebar.file_uploader('Select the coordinates in map by clicking the arrow icon')
