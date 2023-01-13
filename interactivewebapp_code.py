@@ -1,6 +1,11 @@
 import streamlit as st
 st.title("Accessibility Analysis Tool")
 st.map()
+st.sidebar.caption("Select the desired features to perform the analysis")
 df_uploaded = st.sidebar.file_uploader('Select the coordinates in map by clicking the arrow icon')
 st.sidebar.multiselect('Travel Time',['5 minutes','10 minutes','15 minutes','30 minutes','45 minutes','60 minutes'])
+st.sidebar.multiselect('Modes',['Walking','Cycling','Public Transit'])
+st.sidebar.multiselect('Points of Interest',['Restaurant','Bank','Pharmacy','Supermarket','Cafe','University'])
+st.caption("Select the coordinates in map by clicking the arrow icon")
+st.button("Run and View Analysis")
 st.sidebar.button("Download Report")
