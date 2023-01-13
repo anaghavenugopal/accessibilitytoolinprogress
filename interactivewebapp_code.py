@@ -8,3 +8,12 @@ st.sidebar.multiselect('Points of Interest',['Restaurant','Bank','Pharmacy','Sup
 st.caption("Select the coordinates in map by clicking the arrow icon")
 st.button("Run and View Analysis")
 st.button("Download Report")
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.write(' ')
+
+with col2:
+    st.image("https://static.streamlit.io/examples/dog.jpg")
+
+with col3:
+    st.write(' ')
