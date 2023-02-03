@@ -6,7 +6,7 @@ st.sidebar.caption("Select the desired features to perform the analysis")
 
 
 # Input widget to get the travel time in minutes
-travel_time = st.slider("Travel time (in minutes)", min_value=0, max_value=180, value=30, step=1)
+travel_time = st.sidebar.slider("Travel time (in minutes)", min_value=0, max_value=180, value=30, step=1)
 
 # Input widget to get the analysis name
 analysis_name = st.text_input("Analysis name", value="Default Analysis")
