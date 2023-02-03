@@ -1,6 +1,6 @@
 import streamlit as st
 st.title("Accessibility Analysis Tool")
-st.map()
+#st.map()
 st.sidebar.caption("Select the desired features to perform the analysis")
 st.sidebar.multiselect('Travel Time',['5 minutes','10 minutes','15 minutes','30 minutes','45 minutes','60 minutes'])
 st.sidebar.multiselect('Modes',['Walking','Cycling','Public Transit'])
@@ -20,7 +20,7 @@ file = st.file_uploader("Upload the input csv file", type=["csv"])
     # Display the result
     ##st.write(result)
     
-st.caption("Select the coordinates in map by clicking the arrow icon")
+#st.caption("Select the coordinates in map by clicking the arrow icon")
 col_A, col_B=st.columns(2)
 with col_A:
     st.button("Run and View Analysis")
